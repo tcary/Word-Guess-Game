@@ -1,0 +1,104 @@
+body {
+background-image: url("../images/travel-beyond-kenya-10-WBSAFARIO17.jpg");
+}
+h1 {
+font-family: 'Josefin Slab', serif;
+font-size: 3.75em;
+text-align: center;
+color: #f11616;
+}
+
+h2 {
+font-family: 'Titan One', cursive;
+font-size: 2.5em;
+color: #fff;
+text-shadow:
+-3px -3px 0 rgb(52, 239, 114),
+3px -3px 0 rgb(52, 239, 114),
+-3px 3px 0 rgb(52, 239, 114),
+3px 3px 0 rgb(52, 239, 114);
+text-align: center;
+margin-top: -65px;
+margin-right: -200px;
+transform: rotate(-7deg);
+}
+
+h3{
+font-family: 'Bangers';
+font-size: 2.5em;
+text-align: center;
+color: #c8f0f5;
+}
+
+h4 {
+font-family: 'Rancho';
+font-size: 2em;
+color: #f11616;
+}
+
+p {
+font-family: 'Gaegu';
+font-size: 1.75em;
+text-align: center;
+margin-top: -55px;
+}
+
+#guessedLetters {
+color: rgb(21, 84, 105);
+margin-top: 10px;
+}
+
+#pressPlay {
+color: #c8f0f5;
+margin-top: 0;
+margin-bottom: -40px;
+}
+
+#answerWord {
+letter-spacing: .25em;
+margin-top: 0;
+color: #141413;
+}
+
+main {
+width: 80%;
+margin: 0 auto;
+}
+
+.container {
+display: flex;
+
+}
+
+.flexColumn {
+flex-direction: column;
+}
+
+.middle {
+flex: 1;
+order: 2;
+padding: 20px;
+border-left: 1px solid #777777;
+border-right: 1px solid #777777;
+}
+
+#giphy-embed {
+width: 100%;
+height: 100%;
+}
+
+.side {
+width: 20%;
+padding: 20px;
+}
+.left {
+order: 1;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.right{
+order: 3;
+overflow-wrap: break-word;
+}
