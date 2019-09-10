@@ -18,7 +18,7 @@ text-shadow:
 -3px 3px 0 rgb(52, 239, 114),
 3px 3px 0 rgb(52, 239, 114);
 text-align: center;
-margin-top: -65px;
+margin-top: -10px;
 margin-right: -200px;
 transform: rotate(-7deg);
 }
@@ -34,6 +34,7 @@ h4 {
 font-family: 'Rancho';
 font-size: 2em;
 color: #f11616;
+margin-top: 70px;
 }
 
 p {
@@ -45,18 +46,18 @@ margin-top: -55px;
 
 #guessedLetters {
 color: rgb(21, 84, 105);
-margin-top: 10px;
+margin-top: 40px;
 }
 
 #pressPlay {
 color: #c8f0f5;
-margin-top: 0;
-margin-bottom: -40px;
+margin-top: 50px;
+margin-bottom: -62px;
 }
 
 #answerWord {
 letter-spacing: .25em;
-margin-top: 0;
+margin-top: 130px;
 color: #141413;
 }
 

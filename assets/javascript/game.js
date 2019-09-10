@@ -10,6 +10,8 @@ var numWins = 0; // number of wins
 var numLosses = 0; // number of losses
 var isFinished = false; // when true, game can start again
 var ansWord; // the word that is being played
+var looser;
+var winner;
 
 // function runs at the start of page and used to restart after game isFinished
 function setup() {
@@ -76,6 +78,8 @@ function isWinner() {
     if (ansWordArr.indexOf("_") === -1) {
         numWins++;
         isFinished = true;
+        // document.getElementById("yay").src = "../Word-Guess-Game/soundtrack/1_person_cheering-Jett_Rifkin-1851518140.wav";
+        // winner = 
         //if the answer is guessed then play assigned gif
         if (ansWord === "TIGER") {
             document.getElementById("giphy-embed").src = "https://giphy.com/embed/TFTJhIlix4cxVsMVye";
@@ -103,6 +107,9 @@ function isLoser() {
     if (numGuessesRemaining <= 0) {
         numLosses++;
         isFinished = true;
+        // looser = new Audio("../Word-Guess-Game/soundtrack/Loser.band");
+        // looser.play();
+        
         //play the loser gif
         document.getElementById("giphy-embed").src = "https://giphy.com/embed/1d5I0OuQ4vyDMnkY3Q";
         document.getElementById("numLosses").style.color = "#e12d2e";
