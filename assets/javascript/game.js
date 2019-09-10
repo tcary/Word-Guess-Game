@@ -78,8 +78,12 @@ function isWinner() {
     if (ansWordArr.indexOf("_") === -1) {
         numWins++;
         isFinished = true;
-        // document.getElementById("yay").src = "../Word-Guess-Game/soundtrack/1_person_cheering-Jett_Rifkin-1851518140.wav";
-        // winner = 
+        // winner audio
+        var audio = new Audio("assets/soundtrack/yay.mp3")
+        setTimeout(function () {
+            audio.play()
+        }, 1000);
+       
         //if the answer is guessed then play assigned gif
         if (ansWord === "TIGER") {
             document.getElementById("giphy-embed").src = "https://giphy.com/embed/TFTJhIlix4cxVsMVye";
@@ -107,8 +111,11 @@ function isLoser() {
     if (numGuessesRemaining <= 0) {
         numLosses++;
         isFinished = true;
-        // looser = new Audio("../Word-Guess-Game/soundtrack/Loser.band");
-        // looser.play();
+        //looser audio
+        var audio = new Audio("assets/soundtrack/looser.mp3")
+        setTimeout(function () {
+            audio.play()
+        }, 1000);
         
         //play the loser gif
         document.getElementById("giphy-embed").src = "https://giphy.com/embed/1d5I0OuQ4vyDMnkY3Q";
